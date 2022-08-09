@@ -3,6 +3,54 @@
     padding: 0;
 }
 
+a {
+    color: #565555;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #ffffff;
+    height: 8vh;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 35px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #565555;
+    margin: 8px;
+    transition: 0.3s;
+  }
+
 img {
     display: block;
     max-width: 100%;
@@ -13,7 +61,7 @@ li {
 }
 body {
     font-family: 'Lato', sem serifa;
-    background: url("../img/bg.png") no-repeat top center;
+    background: url("../img/bg1.png") no-repeat top center;
     background-attachment: fixed;
     background-size: cover;
     display: grid;
@@ -26,7 +74,7 @@ body {
     padding: 0 16px;
 }
 .titulo {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: normal;
 }
 .perfil {
@@ -34,32 +82,35 @@ body {
     box-sizing: border-box;
     margin: 0 auto;
 }
+
+
 .box {
     background: #ebc8b2;
     padding: 2rem;
     box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
     border-radius: 50px;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 .perfil-pic {
     border-radius: 50%;
     margin: 0 auto 1rem auto;
 }
 .perfil span {
-    font-size: 20px;
+    font-size: 18px;
 }
 .perfil p {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 .make p {
     font-family: Impact;
-    font-size: 18px;
+    font-size: 14px;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
+
 .redes-sociais {
     display: flex;
     justify-content: center;
@@ -83,7 +134,7 @@ body {
     gap: 1rem;
     color: #565555;
 }
-.portifolio li + li {
+.portifolio li + li {   
     margin-top: 1rem;
 }
 .portifolio p {
@@ -98,6 +149,25 @@ body {
     font-weight: normal;
     margin-bottom: 1rem;
 }
+.mp {
+    max-width: 886px;
+    box-sizing: border-box;
+}
+ .mp p {
+     font-size: 18px;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+ }
+
+ .mp h2 {
+     font-weight: normal;
+     margin-bottom: 1rem;
+ }
+.atendimento p {
+    font-size: 18px;
+     margin-top: 1rem;
+     margin-bottom: 2rem;
+}
 
 .copyright {
     font-family: helvetica;
@@ -108,6 +178,59 @@ body {
     padding-bottom: 50vh;
     text-align: center;
 }
+@media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 20vw;
+      height: 90vh;
+      background: #23232e;
+      flex-direction: column;
+      align-items: left;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+  
 
 @media (max-width: 600px) {
     body {
@@ -133,6 +256,8 @@ body {
 .portifolio li div {
     max-width: 448px;
     }
+
+
 .copyright {
     font-size: 18px;
     color: #ffffff

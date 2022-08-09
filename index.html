@@ -8,16 +8,33 @@
     <link href="https: //fonts.googleapis.com/css2? family= Lato:wght@700 & display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
-
 <body>
+    <header>
+        <nav>
+          <a class="logo" href="/">Maquiagem</a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="#eu">Início</a></li>
+            <li><a href="#serviço">Maquiagens</a></li>
+            <li><a href="#makepenteados">Make & Cabelos</a></li>
+          </ul>
+        </nav>
+      </header>
+      <script src="mobile-navbar.js"></script>
     <div class="container">
-    <div class="perfil box">
+    <div class="perfil box" id="eu">
         <img class="perfil-pic" src="img/pic.png" alt="perfil">
         <h1 class="titulo">Glenda Ohanna</h1>
         <span>Ananindeua, Pará, Brasil</span>
-        <p>Amo sempre o que faço.
-            <br>Busco aperfeiçoamento constante para melhor atender você.
-            <br>Sou maquiadora com dois certificados de aperfiçoamento<br>com as maquiadoras <b>Walesca Souza</b> e <b>Michelle Silva</b>
+        <p> Maquiadora a mais de um ano e meio com duas certificações de aperfeiçõamento com as maquiadoras
+            <b>Walesca Souza</b> e <b>Michelle Silva</b>.
+            <h2>O que faço...</h2>
+        Amo o que faço, por isso busco atravéz da maquiagem valorizar ainda mais a beleza única que
+        cada pessoa possuei, usando técnicas apropiadas para cada rosto e olhar.
         </p>
         <div class="make">
             <p>
@@ -30,9 +47,7 @@
             <li><a href="https://wa.me/559183407207?text=Olá%20quero%20saber%20mais%20sobre%20as%20makes"><img src="img/whatsapp.svg" alt="whatsapp"></a></li>
         </ul>
     </div>
-    <div class="portifolio box">
-        <h1 class="titulo">Serviços</h1>
-        <p>O que fazemos: buscamos atravéz da maquiagem valorizar ainda mais a beleza única<br> que cada pessoa tem, usamos técnicas apropiadas para cada rosto e olhar.</p>
+    <div class="portifolio box" id="serviço">
         <ul>
             <li>
                 <img src="img/1.png" alt="1">
@@ -56,34 +71,34 @@
                         Indicado para noite, formandas, convidadas e madrinhas.<br>
                         R$ 100,00
                         <br> Tempo de aplicação 1h.
-                </div>
-            </li>
-            <li>
-                <img src="img/3.png" alt="3">
+                    </div>
+                </li>
+            </ul>
+            <a href="#eu">VOLTAR</a>
+      </div>
+         <div class="mp box" id="makepenteados">
                 <div>
                     <h2>Maquiagem & Penteados</h2>
-                    <p>Make beauty & Babyliss<br>
-                       cabelos curto e médios <br>R$ 150,00 <br>
+                    <p>Make beauty & Babyliss<br>R$ 150,00 <br>
                         Make luxo & Penteado Elaboraddo<br>R$ 190,00<br>
-                        Penteado simples<br>cabelos curto e médios<br>R$ 70,00<br>
+                        Penteado simples cabelos curto e médios<br>R$ 70,00<br>
                         Penteado elaborado longo<br>R$ 90,00</p>
-                </div>                
-            </li>
-
-                <div>
-                    <h2>ATENDIMENTO</h2>
-                    <p><b><u>Não lavamos cabelos</u></b></p>
-                    <p>Agendamento prévio.
-                    <br>Reservas com pagamento de 30% do valor do serviço.
-                            <br>(Em caso de cancelamento não haverá devolução do sinal da reserva)</p>
-                    <p>*Taxa de locomoção a combinar</p>
                 </div>
-
-        </ul>
+                <a href="#eu">VOLTAR</a>
+            </div>
+    <div class="atendimento box">
+        <h1 class="titulo">Atendimeto</h1>
+        <p>Agendamento prévio com pagamento de sinal no valor de 30%<br>do serviço contratado.
+            <br>Sem devolução em caso de desistência
+        </p>
+        <li>Não lavamos cabelos</li>
+        <li>*Taxa de locomoção a combinar</li>
+       
     </div>
+
  
     <footer class="copyright">
-        <p> developed by <br>copyright © 2022 Argum</p>
+        <p> developed by <br>copyright © 2022 Arguim</p>
     </footer>
      
 </div>  
