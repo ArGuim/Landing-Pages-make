@@ -22,6 +22,8 @@ img {
     height: 100vh;
     color: #565555;
   }
+  p {text-indent: 1em;
+  }
   .container {
     padding: 0 16px;
   }
@@ -59,14 +61,7 @@ img {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  .make p {
-    font-family: Impact;
-    font-size: 16px;
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
-  
+   
   .redes-sociais {
     display: flex;
     justify-content: center;
@@ -112,16 +107,33 @@ img {
     margin-bottom: 1rem;
     text-align: center;
   }
+
+  .mp li {
+    font-size: 18px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    list-style-type: disc;
+  }
   
   .atendimento p {
     font-size: 18px;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  .atendimento li {
+    font-size: 14px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     text-align: center;
+    list-style-type: upper-roman;
   }
   .topo {
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
   }
   
   .copyright {
