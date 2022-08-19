@@ -12,7 +12,7 @@ img {
     list-style: none;
   }
   body {
-    font-family: 'Lato', sem serifa;
+    font-family: 'Lato', sans-serif;
     background: url("../img/bg1.png") no-repeat top center;
     background-attachment: fixed;
     background-size: cover;
@@ -28,7 +28,7 @@ img {
     padding: 0 16px;
   }
   .titulo {
-    font-size: 25px;
+    font-size: 28px;
     font-weight: normal;
     text-align: center;
   }
@@ -40,10 +40,10 @@ img {
   
   .box {
     background: #ebc8b2;
-    padding: 2rem;
-    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
+    padding: 3rem;
+    box-shadow: 3px 2px 16px rgba(253, 251, 251, 0.16);
     border-radius: 50px;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
   .box h2 {
     font-weight: normal;
@@ -57,7 +57,7 @@ img {
   }
   
   .perfil p {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
@@ -71,7 +71,7 @@ img {
     margin-left: 1rem;
   }
   .portifolio {
-    max-width: 850px;
+    max-width: 855px;
     box-sizing: border-box;
   }
   .portifolio ul{
@@ -89,51 +89,49 @@ img {
     margin-top: 1rem;
   }
   .portifolio p {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
   .portifolio img {
-    border-radius: 10px;
+    border-radius: 20px;
   }
   
   .mp {
     max-width: 886px;
     box-sizing: border-box;
   }
-  .mp p {
-    font-size: 18px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-
+ 
   .mp li {
-    font-size: 18px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
+    font-size: 16px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
     list-style-type: disc;
+    margin: 0;
+    padding: 2px;
   }
   
   .atendimento p {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: left;
   }
 
-  .atendimento li {
+  .atendimento h4 {
     font-size: 14px;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     text-align: center;
-    list-style-type: upper-roman;
+    margin: 0%;
+    padding: 2px;
   }
   .topo {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1px;
   }
   
   .copyright {
@@ -153,12 +151,13 @@ img {
     background-color: #f0e6da;
     }
   .box {
+    box-shadow: 2px 1px 16px #565555;
     padding: 2rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
     border-radius: 30px;
     }
   .box:first-child {
-    padding: 3rem;
+    padding: 2rem;
     }
   .portifolio ul {
     margin-top: 1rem;
@@ -177,7 +176,7 @@ img {
     color: #ffffff;
     text-shadow: 2px 2px 16px black;
     margin: 0;
-    padding: 4rem 0;
+    padding: 3rem 0;
     }
   }
   
